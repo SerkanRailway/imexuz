@@ -6,7 +6,7 @@ export default function SEO({ title }) {
   const siteDescription =
     "Explore a wide range of products at IMEX. Find the latest trends in Health, Turizm, Logistic, Dried Fruits, and more.";
   const siteKeywords =
-    "IMEX, Health, Turizm, Logistic, Dried Fruits and More.";
+    "IMEX, Health, Tourism, Logistic, Dry Fruits, Consulting, Construction, Food";
   const siteImage = "/media/ChatGPT_Image_13_июн._2025_г.__14_28_59-removebg-preview.png";
 
   return (
