@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23a9ae05.css",
+    "main.js": "/static/js/main.c047fbec.js",
+    "static/media/boxicons.svg": "/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/boxicons.eot": "/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/tourism.jpg": "/static/media/tourism.07ef20c2ec8dae49c6ee.jpg",
+    "static/media/boxicons.woff": "/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/dryfruit.jpg": "/static/media/dryfruit.3f88054ee3d1a532c654.jpg",
+    "static/media/photo_2025-06-13_12-42-45.jpg": "/static/media/photo_2025-06-13_12-42-45.8430904556a5cb56a883.jpg",
+    "static/media/photo_2025-06-13_13-36-40.jpg": "/static/media/photo_2025-06-13_13-36-40.a4879650301e632e2741.jpg",
+    "static/media/consulting.jpg": "/static/media/consulting.fc64293f9a3b1a3b4a71.jpg",
+    "static/media/food.jpg": "/static/media/food.4aaccdddc6a3b9391d02.jpg",
+    "static/media/construction.jpg": "/static/media/construction.05f6da3139f463fb075b.jpg",
+    "static/media/boxicons.woff2": "/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/ChatGPT_Image_13_июн._2025_г.__14_28_59-removebg-preview.png": "/static/media/ChatGPT_Image_13_июн._2025_г.__14_28_59-removebg-preview.9c8fa68cb3b7992280ad.png",
+    "static/media/resize.jpg": "/static/media/resize.2212a2424deacf69b1bf.jpg",
+    "static/media/logistics.jpg": "/static/media/logistics.06ec4e92c8d3e3081d09.jpg",
+    "static/media/healthh.jpg": "/static/media/healthh.7b69e89f26d1ad2e7225.jpg",
+    "static/media/penguin.webp": "/static/media/penguin.19171d3879c4c4432094.webp",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/index.html",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.23a9ae05.css.map": "/static/css/main.23a9ae05.css.map",
+    "main.c047fbec.js.map": "/static/js/main.c047fbec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23a9ae05.css",
+    "static/js/main.c047fbec.js"
+  ]
+}
