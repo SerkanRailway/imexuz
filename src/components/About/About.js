@@ -3,7 +3,7 @@ import "./About.scss";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import SEO from "../../SEO";
-import AboutImg from "../../media/s2.jpg";
+import AboutImg from "../../media/photo_2025-06-13_13-36-40.jpg";
 
 const About = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const About = () => {
     {
       id: 2,
       theme: 2,
-      icon: <i className="bx bx-file"></i>,
+      icon: <i className="bx bx-package"></i>,
       title_uz: "Qog'oz ishlab chiqarih korxonalari",
       title_ru: "Предприятия по производству бумаги",
     },
@@ -33,22 +33,22 @@ const About = () => {
       id: 4,
       theme: 1,
       icon: <i className="bx bx-cookie"></i>,
-      title_uz: "Qandolat mahsulotlari ishlab chiqarish korxonalari ",
-      title_ru: "Предприятия по производству кондитерских изделий ",
+      title_uz: "Oziq-ovqat ishlab chiqarish korxonalari",
+      title_ru: "Предприятия по производству пищевых продуктов",
     },
     {
       id: 5,
       theme: 2,
-      icon: <i className="bx bxs-cube"></i>,
-      title_uz: "Metalurgiya va og'ir sanoat mahsulotlari ",
-      title_ru: "Продукция металлургии и тяжелой промышленности",
+      icon: <i className="bx bxs-factory"></i>,
+      title_uz: "Lojistik va metallurgiya ishlab chiqarish korxonalari",
+      title_ru: "Предприятия по производству логистики и металлургии",
     },
     {
       id: 6,
       theme: 3,
-      icon: <i className="bx bx-sun"></i>,
-      title_uz: "Quyosh panellari o'rnatish",
-      title_ru: "Установка солнечных батарей",
+      icon: <i className="bx bx-health"></i>,
+      title_uz: "So'glik va soliq ishlab chiqarish korxonalari",
+      title_ru: "Предприятия по производству медицинских изделий",
     },
     {
       id: 7,
@@ -105,7 +105,7 @@ const About = () => {
         <div className="right_side">
           <p className="text-about">
             {t(
-              "Elbim elektronik MJCH  2008-yildan boshlab O'zbekistonda sanoat va ishlab chiqarish korxonalariga sifatli xizmat ko'rsatib kelmoqda. Bizning faoliyatimizning asosiy yo'nalishlari quyidagilar sanoat qurilmalarini ta'mirlash, modernizatsiyalash, sanoat qurilmalariga dasturiy ta'minot ishlab chiqish va kerakli ehtiyot qismlarini yetkazib berish xizmati. Bundan tashqari Elbim elektronik MJCH sanoat va ishlab chiqarish uskunalarini bir joydan ikkinchi joyga sifatli ko'chirib berish va yangisini o'rnatib berish xizmatini ham taklif qiladi. Agar siz yangi biznes boshlayotgan bo'lsangiz va ishlab chiqarish qurilmalarini qanday, qayerdan olishni bilmayotgan bo'lsangiz biz sizga yordam beramiz, shu bilan birga sifatli yetkazib berish va ishga tushirish xizmatlarini ham taklif qilamiz."
+              "IMEX UZ kompaniyasi — O‘zbekistonda va xalqaro bozorlarda faoliyat yuritayotgan, zamonaviy talab va ehtiyojlarga mos xizmatlarni taklif etuvchi ishonchli biznes hamkoringizdir. 2008-yildan buyon kompaniyamiz turli sohalarda faoliyat yuritib, o‘zining professionalligi, xizmatlar sifati va mijozlarga bo‘lgan individual yondashuvi bilan ajralib kelmoqda. Asosiy maqsadimiz — har bir mijozning ehtiyojini chuqur o‘rganib, unga eng optimal va natijaviy yechimni taqdim etishdir, IMEX UZ doimo sifat, ishonchlilik va zamonaviy yondashuv tamoyillariga sodiq qolgan holda ish olib boradi. Biz nafaqat xizmat ko‘rsatamiz, balki sizning biznesingizga baraka keltiradigan strategik yechimlarni taklif qilamiz. Jahon bozorlarida o‘z o‘rnini topmoqchi bo‘lgan har qanday kompaniya uchun IMEX UZ — bu tajriba, ishonch, sifat va yuksalishga yo‘l."
             )}
           </p>
         </div>

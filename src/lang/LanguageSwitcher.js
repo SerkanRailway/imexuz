@@ -30,11 +30,11 @@ const LanguageSwitcher = () => {
                 const options = {[
                 {
                     value: 'ru',
-                    label: 'Русский ',
+                    label: 'Русский 🇷🇺',
                 },
                 {
                     value: 'uz',
-                    label: "O'zbek",
+                    label: "O'zbek 🇺🇿",
                 },
                 
                 ]}

@@ -1,158 +1,79 @@
-import React, {useEffect, useState} from 'react';
-import Carusel from "../../Carusel";
-import BaseProducts from "../BaseProducts";
-import './MainPage.scss'
-import axiosInstance from '../configs/axios'
-import {Pagination} from "antd";
-import {useTranslation} from "react-i18next";
-import NextArrow from "../arrows/NextArrow";
-import PrevArrow from "../arrows/PrevArrow";
-import NotFoundProduct from "../lib/NotFoundProduct";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; // ekle
 import SEO from "../../SEO";
-
+import "./MainPage.scss";
+import healthImg from "../../media/healthh.jpg";
+import tourismImg from "../../media/tourism.jpg";
+import constructionImg from "../../media/construction.jpg";
+import dryFruitImg from "../../media/dryfruit.jpg";
+import foodImg from "../../media/food.jpg";
+import logisticsImg from "../../media/logistics.jpg";
+import consultingImg from "../../media/consulting.jpg";
 
 const MainPage = () => {
-    const [caruselData, setCaruselData] = useState([]);
-    const [products, setProdeucts] = useState([]);
-    const {t} = useTranslation();
-    const [pageCount, setPageCount] = useState(0)
+  const { t } = useTranslation();
 
-    const [caruselData2, setCaruselData2] = useState([])
+  const sectors = [
+    {
+      key: "salomatlik",
+      title: t("SALOMATLIK"),
+      description: t("Bizning sog‘liqni saqlash xizmatlarimiz bemorlar uchun eng yuqori sifatni kafolatlaydi."),
+      image: healthImg,
+    },
+    {
+      key: "turizm",
+      title: t("TURIZM"),
+      description: t("Dunyo bo‘ylab sayohatlar, mehmondo‘stlik va unutilmas tajribalar."),
+      image: tourismImg,
+    },
+    {
+      key: "qurilish",
+      title: t("QURILISH"),
+      description: t("Yuqori sifatli qurilish loyihalari va muhandislik yechimlari."),
+      image: constructionImg,
+    },
+    {
+      key: "quritilgan-mevalar",
+      title: t("QURITILGAN MEVALAR"),
+      description: t("Tabiiy va foydali quritilgan mahsulotlar eksporti va savdosi."),
+      image: dryFruitImg,
+    },
+    {
+      key: "oziq-ovqat",
+      title: t("OZIQ-OVQAT"),
+      description: t("Ekologik toza va sifatli oziq-ovqat mahsulotlari ishlab chiqarish."),
+      image: foodImg,
+    },
+    {
+      key: "logistics",
+      title: t("LOJISTIKA"),
+      description: t("Yuk tashish, bojxona va xalqaro logistika xizmatlari."),
+      image: logisticsImg,
+    },
+    {
+      key: "maslahat",
+      title: t("MASLAHAT XIZMATLARI"),
+      description: t("Biznes rivojlanishi uchun strategik maslahatlar va tahlillar."),
+      image: consultingImg,
+    },
+  ];
 
-    const [currentPage, setCurrentPage] = useState(1)
-
-    const [error, setError] = useState([])
-    const handleChange = (page) => {
-        setCurrentPage(page)
-        getProducts(page)
-    }
-    useEffect(() => {
-        getProducts(1)
-        axiosInstance.get("/carusel/").then((res) => {
-            setCaruselData(res.data)
-        }).catch((err) => {
-            setError(
-                {
-                    ...error,
-                    err
-                }
-            )
-        })
-        axiosInstance.get("/partnior/").then((res) => {
-            setCaruselData2(res.data)
-        }).catch((err) => {
-            setError(
-                {
-                    ...error,
-                    err
-                }
-            )
-        })
-
-    }, []);
-    const getProducts = (count) => {
-
-        axiosInstance.get(`/products/?page_number=${count}`).then((res) => {
-            setProdeucts(res.data.results)
-            setPageCount(res.data.count)
-            console.log(res.data)
-        }).catch((err) => {
-            setError(
-                {
-                    ...error,
-                    err
-                }
-            )
-
-        })
-    }
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true, // Enable auto slideshow
-        autoplaySpeed: 3000,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
-    };
-    const settings2 = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true, // Enable auto slideshow
-        autoplaySpeed: 3000,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }
-
-        ]
-    };
-    const style = {
-        height: 443,
-        width: '100%',
-        borderRadius: 25,
-        zIndex: -1,
-    }
-    const style2 = {
-        height: 100,
-        width: '100%',
-        borderRadius: 25,
-        zIndex: -1,
-    }
-    return (
-        <div className="main-page">
-            <SEO/>
-            {caruselData.length !== 0 || caruselData2.length !== 0 || products.length !== 0 ?
-                <div>
-                    <div>
-                        <Carusel data={caruselData} settings={settings} style={style}/>
-                    </div>
-                    <div className="product_section">
-                        <h1>{t("Bizning mahsulotlarimiz")}</h1>
-                        <div className="products">
-                            {
-                                products.map((product) => (
-                                    <BaseProducts product={product} key={product.id}/>
-                                ))
-                            }
-                        </div>
-                        <Pagination size="large" simple onChange={handleChange} defaultCurrent={1} current={currentPage}
-                                    total={pageCount}/>
-                    </div>
-                    <div className="our_brends">
-                        <h1>{t("Bizning hamkorlarimiz")}</h1>
-                        <Carusel className={"custom-slider"} data={caruselData2} settings={settings2} style={style2}/>
-                    </div>
-                </div> :
-                <NotFoundProduct title={"Iltimos kuting..."}/>
-            }
-        </div>
-    )
+  return (
+    <div className="main-page">
+      <SEO />
+      <h1 className="main-title">{t("BIZNING YO'NALISHLAR")}</h1>
+      <div className="sectors">
+        {sectors.map((sector) => (
+          <Link to={`/${sector.key}`} key={sector.key} className="sector-card">
+            <img src={sector.image} alt={sector.title} />
+            <h3>{sector.title}</h3>
+            <p>{sector.description}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default MainPage;

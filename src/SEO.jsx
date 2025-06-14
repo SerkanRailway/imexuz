@@ -2,12 +2,12 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 export default function SEO({ title }) {
-  const siteTitle = "Elbim Elektronik";
+  const siteTitle = "IMEX UZ";
   const siteDescription =
-    "Explore a wide range of products at Elbim. Find the latest trends in fashion, electronics, and more.";
+    "Explore a wide range of products at IMEX. Find the latest trends in Health, Turizm, Logistic, Dried Fruits, and more.";
   const siteKeywords =
-    "Elbim, online shopping, fashion, electronics, Uzbekistan";
-  const siteImage = "https://example.com/path/to/your/og-image.jpg";
+    "IMEX, Health, Turizm, Logistic, Dried Fruits and More.";
+  const siteImage = "/media/ChatGPT_Image_13_июн._2025_г.__14_28_59-removebg-preview.png";
 
   return (
     <Helmet>
@@ -34,8 +34,8 @@ export default function SEO({ title }) {
         content={title ? `${title} - ${siteTitle}` : siteTitle}
       />
       <meta name="twitter:description" content={siteDescription} />
-      <meta name="twitter:site" content="@elbim_uz" />
-      <meta name="twitter:creator" content="@elbim_uz" />
+      <meta name="twitter:site" content="@imexuz1" />
+      <meta name="twitter:creator" content="@imexuz1" />
       <meta name="twitter:image" content={siteImage} />
 
       <link rel="icon" href="/logo.png" />

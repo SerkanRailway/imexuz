@@ -1,15 +1,14 @@
-body{
+body {
   background-color: silver;
   width: 100%;
   height: 120px;
   align-items: center;
   justify-content: center;
+  
 }
-
 
 .navbar {
   margin-top: 10px;
-  
 
   .upper_nav {
     display: flex;
@@ -33,13 +32,13 @@ body{
       background: #000;
       transition: width 0.3s linear;
     }
-    
+
     &.active {
       font-weight: 600;
       background-color: #333;
       color: white;
     }
-    
+
     &:hover {
       font-weight: 600;
       background-color: #333;
@@ -49,25 +48,25 @@ body{
       }
     }
   }
-  
+
   .search {
     position: relative !important;
     max-width: 350px;
     width: 100%;
     border-radius: 5px;
-    
+
     &.open {
       height: 40px !important;
-      
+
       .ant-input-affix-wrapper {
         border-radius: 5px 0 0 0;
       }
-      
+
       .ant-btn {
         border-bottom-right-radius: 0 !important;
       }
     }
-    
+
     .search-input {
       background-color: darkgoldenrod !important;
       height: 40px !important;
@@ -179,12 +178,12 @@ body{
     display: block;
     flex-direction: column;
 
-    .nav-link {
+    .navLinks {
       display: block !important;
       font-weight: 500;
       margin-bottom: 20px;
       text-decoration: none !important;
-      color: black;
+      color: black !important;
       padding: 10px;
       border-radius: 5px;
       transition: all 0.3s ease;
@@ -213,11 +212,125 @@ body{
     }
   }
 
-  .nav-link {
+  .navLinks {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     font-family: "Montserrat", sans-serif;
-    color: #000;
+    fill: black;
+    color: black;
   }
 }
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 1000;
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-decoration: none !important;
+    color: black !important;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+
+    .line {
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.3s linear;
+    }
+
+    &.active {
+      font-weight: 600;
+      background-color: #555;
+      color: white;
+    }
+
+    &:hover {
+      font-weight: 600;
+      background-color: #555;
+      color: white;
+      .line {
+        width: 100%;
+      }
+    }
+
+    i {
+      margin-right: 10px; // Adjust space between icons and text
+    }
+  }
+
+  .close-button {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+
+.navbar .upper_nav .logo img {
+  max-width: 120px !important;
+  height: auto !important;
+  display: block;
+}
+
+.drawer .ant-drawer-body {
+  padding: 0 !important;
+}
+
+.drawer .main-page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.drawer .navLinks {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  z-index: 1;
+  color: white;
+
+  a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+
+.drawer .language {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  z-index: 1;
+}
+
+
+
+
+}
+

@@ -1,8 +1,9 @@
 import React from "react";
-import Logo from "../../media/img.png";
+import Logo from "../../media/ChatGPT_Image_13_июн._2025_г.__14_28_59-removebg-preview.png";
 import "./Footer.scss";
 import { useTranslation } from "react-i18next";
 import SEO from "../../SEO";
+
 const Footer = () => {
   const { t } = useTranslation();
   return (
@@ -13,34 +14,27 @@ const Footer = () => {
           <div className="left_side">
             <div className="footer_logo">
               <a href="/">
-                <img className="logogo" src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" style={{ maxWidth: "120px", height: "auto" }} />
               </a>
-              <h1 className="company_name">Elbim Elektronik</h1>
+              <h1 className="company_name">IMEX UZ</h1>
             </div>
             <div
               style={{ marginTop: 10 }}
               className="footer_company_description"
             >
               {t(
-                "Biz eng so'nggi texnologiya mahsulotlaridan foydalanamiz va tajribali, samimiy xodimlarimiz bilan sektorda yetakchi o'rinni egallab turibmiz. Biz har doim mijozlar ehtiyojini qondirishni birinchi o'ringa qo'yadigan prinsipimiz bilan sizga xizmat qilishdan mamnunmiz. Iltimos, biz bilan bog'lanishda ikkilanmang."
+                "Biz sog‘liqni saqlash, turizm, qurilish, quritilgan mevalar, oziq-ovqat, logistika va konsalting sohalarida faoliyat yuritamiz. Har bir yo‘nalishda eng yangi texnologiyalar, tajribali mutaxassislar va halollik tamoyiliga asoslangan yondashuvimiz bilan mijozlarimizga ishonchli, sifatli va barqaror xizmatlar taqdim etamiz."
               )}
             </div>
             <div className="footer_company_social_media">
+            
               <a
                 target="_blank"
-                href="https://www.facebook.com/elbim_electronic"
-              >
-                <i className="bx bxl-facebook-circle"></i>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/elbim_electronic/?hl=tr"
+                href="https://www.instagram.com/imexuz1/?hl=tr"
               >
                 <i className="bx bxl-instagram"></i>
               </a>
-              <a target="_blank" href="https://t.me/elbim_electronic">
-                <i className="bx bxl-telegram"></i>
-              </a>
+              
             </div>
           </div>
           <div className="right_side">
@@ -59,10 +53,10 @@ const Footer = () => {
                 </span>{" "}
                 <a
                   target="_blank"
-                  href="https://yandex.com.tr/harita/-/CTcUVnb"
+                  href="https://www.google.com/maps/place/68+%D0%9E%D0%B4%D0%B5%D0%B6%D0%B5%D0%BA/@41.2856364,69.2519099,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8aedad9b1311:0x720b58d864e12270!8m2!3d41.2856324!4d69.2544848!16s%2Fg%2F11bzz1nb9y?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D"
                 >
                   {t(
-                    "Mirobod tumani, Farg'ona yo'li 222/4 O'zbekiston Toshkent"
+                    "Shota Rustavelli 53, O'zbekiston Toshkent"
                   )}
                 </a>{" "}
               </li>
@@ -74,7 +68,8 @@ const Footer = () => {
                       style={{ marginRight: 5, color: "green" }}
                     ></i>
                   </span>
-                  <a href="tel:+998 93 555-13-54"> +998 (93) 555-13-54</a>
+                  <a href="tel:+998 90 969 96 87">+998 (90) 969-96-87</a>
+
                   <br />
                   <span className="footer-icon">
                     <i
@@ -82,7 +77,8 @@ const Footer = () => {
                       style={{ marginRight: 5, color: "green" }}
                     ></i>
                   </span>
-                  <a href="tel:+998 78 120-31-72"> +998 (78) 120-31-72</a>
+                  <a href="tel:+998 90 969 96 87">+998 (90) 969-96-87</a>
+
                 </div>
               </li>
               <li>
@@ -92,9 +88,9 @@ const Footer = () => {
                     style={{ marginRight: 5, color: "orange" }}
                   ></i>
                 </span>{" "}
-                <a href="mailto:info@elbimelektronik.uz">
+                <a href="mailto:imexuz1@hotmail.com">
                   {" "}
-                  info@elbimelektronik.uz
+                  imexuz1@hotmail.com
                 </a>
               </li>
             </ul>

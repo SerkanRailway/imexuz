@@ -25,12 +25,10 @@ const Contact = () => {
                 </span>{" "}
                 <a
                   target="_blank"
-                  href="https://yandex.com.tr/harita/-/CTcUVnb"
+                  href="https://www.google.com/maps/place/68+%D0%9E%D0%B4%D0%B5%D0%B6%D0%B5%D0%BA/@41.2856364,69.2519099,17z/data=!3m1!4b1!4m6!3m5!1s0x38ae8aedad9b1311:0x720b58d864e12270!8m2!3d41.2856324!4d69.2544848!16s%2Fg%2F11bzz1nb9y?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D"
                   rel="noreferrer"
                 >
-                  {t(
-                    "Mirobod tumani, Farg'ona yo'li 222/4 O'zbekiston Toshkent"
-                  )}
+                  {t("Shota Rustavelli 53, O'zbekiston Toshkent")}
                 </a>
               </li>
               <li style={{ display: "flex" }}>
@@ -42,7 +40,7 @@ const Contact = () => {
                       style={{ marginRight: 10, color: "green" }}
                     ></i>
                   </span>
-                  <a href="tel:+998 93 555 06-55">+998 (93) 555 06-55</a>
+                  <a href="tel:+998 90 969 96 87">+998 (90) 969-96-87</a>
                   <br />
                   <span className="footer-icon">
                     <i
@@ -50,65 +48,18 @@ const Contact = () => {
                       style={{ marginRight: 5, color: "green" }}
                     ></i>
                   </span>
-                  <a href="tel:+998 93 555 13-54"> +998 (93) 555-13-54</a>{" "}
+                  <a href="tel:+998 93 497 96 87"> +998 (93) 497-96-87</a>{" "}
                   <br />
-                  <i
-                    className="bx bxs-phone"
-                    style={{ marginRight: 9, color: "green", padding: "3px" }}
-                  ></i>{" "}
-                  <a href="tel:+998 78 120 31-72">+998 (78) 120-31-72</a>
-                  <li className="office">{t("Avtomatlashtirish bo'limi")}</li>
-                  <span className="footer-icon">
-                    <i
-                      className="bx bxs-phone"
-                      style={{ marginRight: 5, color: "green" }}
-                    ></i>
-                  </span>
-                  <a href="tel:998 (93) 555 13-54">+998 (93) 555-13-54</a>
-                  <br />
-                  <span className="footer-icon">
-                    <i
-                      className="bx bxs-phone"
-                      style={{ marginRight: 5, color: "green" }}
-                    ></i>
-                  </span>
-                  <a href="tel:+90 (532) 205 88 76">+90 (532) 205 88 76</a>
-                  <br />
-                  <span className="footer-icon">
-                    <i
-                      className="bx bxs-phone"
-                      style={{ marginRight: 5, color: "green" }}
-                    ></i>
-                  </span>
-                  <a href="tel:+998 (93) 555 13 50">+998 (93) 555 13 50</a>
-                  <li className="office">{t("Tamirlash bo'limi")} </li>
-                  <span className="footer-icon">
-                    <i
-                      className="bx bxs-phone"
-                      style={{ marginRight: 5, color: "green" }}
-                    ></i>
-                  </span>
-                  <a href="tel:+998 (78) 120 31 73">+998 (78) 120 31 73</a>
-                  <br />
-                  <span className="footer-icon">
-                    <i
-                      className="bx bxs-phone"
-                      style={{ marginRight: 5, color: "green" }}
-                    ></i>
-                  </span>
-                  <a href="tel:+998 (78) 120 31 72">+998 (78) 120 31 72</a>
                 </div>
               </li>
-              <li>
+              
+              <li style={{ display: "flex" }}>
                 <div>
                   <i
-                    className="bx bx-envelope"
+                    className="bx bx-envelope display-flex"
                     style={{ marginRight: 5, color: "orange" }}
                   ></i>
-                  <a href="mailto:info@elbimelektronik.uz">
-                    {" "}
-                    info@elbimelektronik.uz
-                  </a>
+                  <a href="mailto:imexuz1@hotmail.com"> imexuz1@hotmail.com</a>
                 </div>
               </li>
             </ul>
@@ -116,12 +67,15 @@ const Contact = () => {
         </div>
         <div className="right-side">
           <iframe
-            title="Yandex map"
+            title="Google Map"
             className="yandex-map"
-            src="https://yandex.com.tr/map-widget/v1/?ll=69.304537%2C41.282736&mode=search&sll=69.304844%2C41.282752&text=41.282752%2C69.304844&z=17.42"
-            width="560"
-            height="400"
-            allowFullScreen="true"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.06763707649!2d69.2544848!3d41.28563239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aedad9b1311%3A0x720b58d864e12270!2zNjgg0J7QtNC10LbQtdC6!5e0!3m2!1sru!2s!4v1749802718689!5m2!1sru!2s"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
