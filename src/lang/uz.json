@@ -121,8 +121,23 @@
   "Huquqiy maslahatlar": "Huquqiy maslahatlar",
   "Psixologik maslahatlar": "Psixologik maslahatlar",
   "Biznes bo‘yicha yo‘naltirish": "Biznes bo‘yicha yo‘naltirish",
-  "Shaxsiy rivojlanish tavsiyalari": "Shaxsiy rivojlanish tavsiyalari"
+  "Shaxsiy rivojlanish tavsiyalari": "Shaxsiy rivojlanish tavsiyalari",
+  "about": {
+    "title": "Biz haqimizda",
+    "servicesTitle": "Xizmat ko'rsatish sohalarimiz",
+    "description": "IMEX UZ kompaniyasi — O‘zbekistonda va xalqaro bozorlarda faoliyat yuritayotgan, zamonaviy talab va ehtiyojlarga mos xizmatlarni taklif etuvchi ishonchli biznes hamkoringizdir. 2008-yildan buyon kompaniyamiz turli sohalarda faoliyat yuritib, o‘zining professionalligi, xizmatlar sifati va mijozlarga bo‘lgan individual yondashuvi bilan ajralib kelmoqda. Asosiy maqsadimiz — har bir mijozning ehtiyojini chuqur o‘rganib, unga eng optimal va natijaviy yechimni taqdim etishdir, IMEX UZ doimo sifat, ishonchlilik va zamonaviy yondashuv tamoyillariga sodiq qolgan holda ish olib boradi. Biz nafaqat xizmat ko‘rsatamiz, balki sizning biznesingizga baraka keltiradigan strategik yechimlarni taklif qilamiz. Jahon bozorlarida o‘z o‘rnini topmoqchi bo‘lgan har qanday kompaniya uchun IMEX UZ — bu tajriba, ishonch, sifat va yuksalishga yo‘l.",
+    "cards": {
+      "1": "To'qimachilik korxonalari",
+      "2": "Qog'oz ishlab chiqarish korxonalari",
+      "3": "Qurilish materiallari ishlab chiqarish korxonalari",
+      "4": "Oziq-ovqat ishlab chiqarish korxonalari",
+      "5": "Lojistik va metallurgiya ishlab chiqarish korxonalari",
+      "6": "Sog‘liq va tibbiyot mahsulotlari ishlab chiqarish",
+      "7": "Istalgan turdagi elektronik qurilmalarni ta'mirlash"
+    }
+  }
 }
+
 
 
 
